@@ -42,7 +42,9 @@ The modeling phase was extensive and iterative:
 
 Our SHAP analysis revealed that the 'Complain' feature had a disproportionately high influence. While achieving high accuracy is vital, ensuring that the model is versatile and not overly dependent on one feature is crucial for real-world applications.
 
-### Last findings:
+### - Subsequent Iterations: 
+
+After removing the dominant 'Complain' feature, several other models were tested to optimize accuracy and ensure real-world applicability. The results from these iterations, while not as high as the initial models, were still promising and, more importantly, were based on a broader range of features making them potentially more reliable in diverse scenarios.
 
 - XGBoost showcased the highest overall accuracy (around 86.4%) and the best F1 Score (approximately 0.58) among the three models.
 - Random Forest followed closely, especially after hyperparameter tuning.
@@ -56,15 +58,19 @@ Our SHAP analysis revealed that the 'Complain' feature had a disproportionately 
 - XGBoost with hyperparameter tuning appears to be the most promising model, striking a balance between accuracy and interpretability.
 - SHAP indicated feature importance, suggesting that certain features predominantly influence predictions. Future strategies could focus on these features to mitigate churn.
 - For businesses, grasping the factors leading to customer churn is paramount. While the models provide insights, qualitative research could offer deeper understandings of the underlying reasons.
+- This project serves as a testament to the iterative and evolving nature of data science projects. Anomalies or dominant features like 'Complain' can sometimes lead to misleadingly high results. By identifying and addressing these issues, the project has paved the way for models that might have a broader application.
 
 ## Future Work
 
 - Explore ensemble methods or neural networks for potentially better performance.
 - Dive deeper into feature engineering to reveal more patterns.
 - Continuously evaluate the model with new data to ensure robustness.
+- Explore the combination of multiple models (ensembling) to enhance predictive capabilities.
+
+
 
 ## Contributing and Feedback
 
-This research project is ongoing. Contributions or feedback are highly welcome. If you have any suggestions or insights, please raise an issue or pull request directly on this GitHub repository.
+This research project is ongoing and for educational purposes.
 
 
